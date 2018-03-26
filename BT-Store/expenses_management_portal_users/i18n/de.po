@@ -1,0 +1,265 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* expenses_management_portal_users
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-04 15:50+0000\n"
+"PO-Revision-Date: 2017-08-04 15:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "<span class=\"fa fa-trash-o\"/> Delete expense"
+msgstr "<span class=\"fa fa-trash-o\"/> Spesen Löschen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "<span class=\"fa fa-trash-o\"/> Remove selected attachment(s)"
+msgstr "<span class=\"fa fa-trash-o\"/> Ausgewähle Anhänge löschen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Account"
+msgstr "Konto"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Account..."
+msgstr "Konto..."
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:66
+#, python-format
+msgid "All"
+msgstr "Alle"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Attachment(s)"
+msgstr "Anhänge"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Bill Reference"
+msgstr "Rechnungsreferenz"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Company"
+msgstr "Unternehmen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Confirm\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "Bestätigen\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Create"
+msgstr "Anlegen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Current state of the expense"
+msgstr "Aktueller Spesen-Status"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Date"
+msgstr "Datum"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:320
+#, python-format
+msgid "Date from should have the following format: '%s'"
+msgstr "Das Startdatum muss in folgendem Format eingegeben werden: '%s'"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Delete"
+msgstr "Löschen"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:44
+#, python-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: expenses_management_portal_users
+#. openerp-web
+#: code:addons/expenses_management_portal_users/static/src/js/expenses_management_portal_users.js:90
+#, python-format
+msgid "Do you really want to remove these attachments?"
+msgstr "Möchten Sie diese Anhänge wirklich löschen?"
+
+#. module: expenses_management_portal_users
+#. openerp-web
+#: code:addons/expenses_management_portal_users/static/src/js/expenses_management_portal_users.js:58
+#: code:addons/expenses_management_portal_users/static/src/js/expenses_management_portal_users.js:63
+#, python-format
+msgid "Do you really want to remove these records?"
+msgstr "Möchten Sie diese Datensätze wirklich löschen?"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Employee (to reimburse)"
+msgstr "Mitarbeiter (zu erstatten)"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:198
+#: code:addons/expenses_management_portal_users/controllers/main.py:230
+#: model:ir.model,name:expenses_management_portal_users.model_hr_expense
+#, python-format
+msgid "Expense"
+msgstr "Spesen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Expense Description"
+msgstr "Spesen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.portal_layout
+msgid "Expenses"
+msgstr "Spesen"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:60
+#, python-format
+msgid "Future expenses"
+msgstr "Zukünftige Spesen"
+
+#. module: expenses_management_portal_users
+#: model:ir.model.fields,field_description:expenses_management_portal_users.field_hr_expense_last_refused_message
+msgid "Last refused message"
+msgstr "Letzte Ablehnungs-Nachricht"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "My Expenses"
+msgstr "Meine Spesen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "New Expense"
+msgstr "Neue Spesen"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:43
+#, python-format
+msgid "Newest"
+msgstr "Neuste"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Notes"
+msgstr "Notizen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Payment By"
+msgstr "Zahlung von"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:218
+#, python-format
+msgid "Please make sure that your user has a partner assigned with an email (contact with the administrator, or modify your data on the section 'Your Details')."
+msgstr "Bitte stellen Sie sicher, dass Ihr Benutzer mit einem Partner verlinkt ist, welcher eine E-Mail Adresse hat (kontaktieren Sie den Administrator oder ändern Sie Ihre Daten im Bereich 'Ihre Details')."
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:213
+#, python-format
+msgid "Please make sure that your user has an employee assigned (contact with the administrator)."
+msgstr "Stellen Sie sicher, dass ihr Benutzer mit einem Mitarbeiter verknüpft ist (kontaktieren Sie den Administrator)."
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Product"
+msgstr "Produkt"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Product..."
+msgstr "Produkt..."
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Quantity"
+msgstr "Menge"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Resubmit"
+msgstr "Erneut vorlegen"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:329
+#, python-format
+msgid "Some required fields are empty."
+msgstr "Einige Pflichtfelder sind leer."
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Status"
+msgstr "Status"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Submit to manager"
+msgstr "Dem Manager vorlegen"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.portal_my_home
+msgid "There are currently no expenses for your account."
+msgstr "Für Ihr Konto existieren keine Spesen."
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "There are no expenses yet."
+msgstr "Keine Spesen vorhanden."
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:64
+#, python-format
+msgid "This Month"
+msgstr "Dieser Monat"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:62
+#, python-format
+msgid "This Week"
+msgstr "Diese Woche"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expenses
+msgid "Total"
+msgstr "Betrag"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.my_expense
+msgid "Unit Price"
+msgstr "Preis pro ME"
+
+#. module: expenses_management_portal_users
+#: code:addons/expenses_management_portal_users/controllers/main.py:337
+#, python-format
+msgid "Unknown field '%s'"
+msgstr "Unbekanntes Feld '%s'"
+
+#. module: expenses_management_portal_users
+#: model:ir.ui.view,arch_db:expenses_management_portal_users.portal_my_home
+msgid "Your expenses"
+msgstr "Spesen"

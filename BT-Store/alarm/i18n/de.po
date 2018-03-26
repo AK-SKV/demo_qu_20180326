@@ -1,0 +1,545 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* alarm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20161102\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-18 14:00+0000\n"
+"PO-Revision-Date: 2017-04-18 14:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:83
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_date_number
+#, python-format
+msgid "- Negative integer: a notification is generated this number of days BEFORE the date set in *Date Field*\n"
+"- Positive integer: a notification is generated this number of days AFTER the date set in *Date Field*\n"
+"- Zero: a notification is generated right on the date set in *Date Field*"
+msgstr "- Negative ganze Zahl: eine Meldung wird in dieser Zahl von Tagen VOR dem Datum in *Datumsfeld* generiert\n"
+"- Positive ganze Zahl: eine Meldung wird in dieser Zahl von Tagen NACH dem Datum in *Datumsfeld* generiert\n"
+"- Null: eine Meldung wird gerade an dem Datum in *Datumsfeld* generiert"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:193
+#, python-format
+msgid "<b>{0} records</b> ({1}) have been <b>found</b> using the specified <i>record selection</i> and <i>date condition</i> criteria.<br/><br/><b>{2} alarm notifications</b> have been <b>generated</b> following the specified <i>notification</i> parameters.<br/><br/>(Note that one record may generate zero, one or multiple notifications.)<br/>(Also note that if a particular notification was already generated in the past, it is not generated again.)"
+msgstr "<b>{0} Datensätze</b> ({1}) wurden mit den eingegebenen <i>Datensatzauswahl-</i> und <i>Datumsbedingungkriterien</i> <b>gefunden</b>.<br/><br/><b>{2} Alarmmeldungen</b> wurden mit den eingegebenen <i>Meldungsparametern</i> <b>generiert</b>.<br/><br/>(Berücksichtigen Sie, dass ein Datansatz keine, eine oder mehrere Meldungen generieren kann.)<br/>(Berücksichtigen Sie auch, dass wenn eine bestimmte Meldung schon in der Vergangenheit generiert wurde, wird sie nicht wieder generiert.)"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: alarm
+#: code:addons/alarm/models/notification.py:28
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_active_from
+#, python-format
+msgid "Active from"
+msgstr "Aktiv von"
+
+#. module: alarm
+#: model:ir.model,name:alarm.model_alarm_alarm
+msgid "Alarm"
+msgstr "Alarm"
+
+#. module: alarm
+#: model:ir.model,name:alarm.model_alarm_info_dialog
+msgid "Alarm Info Dialog"
+msgstr "Dialog mit Alarminfo"
+
+#. module: alarm
+#: model:ir.model,name:alarm.model_alarm_notification
+msgid "Alarm Notification"
+msgstr "Alarmmeldung"
+
+#. module: alarm
+#: model:ir.actions.act_window,name:alarm.show_alarm_notifications_tree_action
+#: model:ir.ui.menu,name:alarm.menu_alarm_notifications
+msgid "Alarm Notifications"
+msgstr "Alarmmeldungen"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:202
+#, python-format
+msgid "Alarm Triggered"
+msgstr "Alarm ausgelöst"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:114
+#: selection:alarm.alarm,current_user_group:0
+#: model:res.groups,name:alarm.group_alarm_user
+#, python-format
+msgid "Alarm User"
+msgstr "Alarmbenutzer"
+
+#. module: alarm
+#: model:ir.actions.act_window,name:alarm.show_alarms_tree_action
+#: model:ir.module.category,name:alarm.module_category_alarms
+#: model:ir.ui.menu,name:alarm.menu_alarms
+#: model:ir.ui.menu,name:alarm.menu_alarms_top
+msgid "Alarms"
+msgstr "Alarme"
+
+#. module: alarm
+#: model:ir.module.category,description:alarm.module_category_alarms
+msgid "Allows you to create alarms for any record with a date field"
+msgstr "Man kann Alarme für Datensätze mit einem Datumsfeld anlegen"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:111
+#: code:addons/alarm/models/notification.py:34
+#: selection:alarm.alarm,state:0
+#: selection:alarm.notification,state:0
+#: model:ir.ui.view,arch_db:alarm.alarm_search_view
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+#, python-format
+msgid "Cancelled"
+msgstr "Gestrichen"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.info_dialog_form_view
+#: model:ir.ui.view,arch_db:alarm.notification_message_preview_form_view
+msgid "Close"
+msgstr "Schließen"
+
+#. module: alarm
+#: code:addons/alarm/models/notification.py:33
+#: selection:alarm.notification,state:0
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+#, python-format
+msgid "Closed"
+msgstr "Geschlossen"
+
+#. module: alarm
+#: model:ir.actions.act_window,name:alarm.create_alarm_for_current_object_action
+msgid "Create Alarm"
+msgstr "Alarm anlegen"
+
+#. module: alarm
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_create_uid
+#: model:ir.model.fields,field_description:alarm.field_alarm_info_dialog_create_uid
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_create_uid
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_create_uid
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+msgid "Created by"
+msgstr "Angelegt von"
+
+#. module: alarm
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_create_date
+#: model:ir.model.fields,field_description:alarm.field_alarm_info_dialog_create_date
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_create_date
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_create_date
+msgid "Created on"
+msgstr "Angelegt am"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+msgid "Date Condition"
+msgstr "Datumsbedingung"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:76
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_date_field_id
+#, python-format
+msgid "Date Field"
+msgstr "Datumsfeld"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:78
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_date_field_id
+#, python-format
+msgid "Date(time) field within the specified *Model* whose check may trigger the generation of a notification. When checking this field, if time information is present, it is simply ignored (e.g., \"2017-01-25 09:30:00\" is treated as \"2017-01-25\")."
+msgstr "Datumsfeld (mit oder ohne Uhrzeit) innerhalb des eingegebenen *Modells*, dessen Prüfen die Generation einer Meldung auslösen kann. Während des Prüfens dieses Feld werden Uhrzeitinformationen einfach ignoriert (z.B., \"2017-01-25 09:30:00\" wird als \"2017-01-25\" betrachtet)."
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:55
+#: code:addons/alarm/models/alarm.py:57
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_description
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_description_128
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+#, python-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: alarm
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_display_name
+#: model:ir.model.fields,field_description:alarm.field_alarm_info_dialog_display_name
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_display_name
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+msgid "Domain example: ['&', ('state', '=', 'draft'), ('create_uid', '=', uid)]"
+msgstr "Beispiel einer Domain: ['&', ('state', '=', 'draft'), ('create_uid', '=', uid)]"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:110
+#: selection:alarm.alarm,state:0
+#: model:ir.ui.view,arch_db:alarm.alarm_search_view
+#, python-format
+msgid "Done"
+msgstr "Bestätigt"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:109
+#: selection:alarm.alarm,state:0
+#: model:ir.ui.view,arch_db:alarm.alarm_search_view
+#, python-format
+msgid "Draft"
+msgstr "Entwurf"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:91
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_user_ids
+#, python-format
+msgid "Explicit Users to Notify"
+msgstr "Explizite Benutzer, die Meldungen bekommen müssen"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:56
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_description
+#, python-format
+msgid "Further details to better understand the purpose of this alarm"
+msgstr "Weitere Information um das Ziel des Alarmes besser zu verstehen"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+msgid "Future"
+msgstr "Zukünftig"
+
+#. module: alarm
+#: code:addons/alarm/models/notification.py:26
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_user_id
+#: model:ir.ui.view,arch_db:alarm.notification_form_view
+#, python-format
+msgid "Generated for"
+msgstr "Generiert für"
+
+#. module: alarm
+#: code:addons/alarm/models/notification.py:35
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_hash
+#, python-format
+msgid "Hash"
+msgstr "Hash"
+
+#. module: alarm
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_id
+#: model:ir.model.fields,field_description:alarm.field_alarm_info_dialog_id
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_id
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_id
+msgid "ID"
+msgstr "ID"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:90
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_notify_only_me
+#, python-format
+msgid "If this flag is set, I will be the only person to be notified"
+msgstr "Wenn dieses Feld markiert ist, bin ich der Einzige, der eine Meldung bekommen wird"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:101
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_notification_message
+#, python-format
+msgid "Information that will be provided to the notified users. Here we can provide static information but also dynamic information. To provide dynamic information we must use MAKO templates (same technique as the one used in email templates). For example, if we have an alarm for project tasks and we want to include in the message the name of the project manager, we can use the following template: ${object.manager_id.name}."
+msgstr "Informationen, die die angemeldeten Benutzer bekommen werden. Hier können wir sowohl statische als auch dynamische Informationen eingeben. Um dynamische Informationen einzugeben, müssen wir MAKO Templates benutzen (die selbe Technik, die in Email Templates benutzt wird). Zum Beispiel, wenn wir einen Alarm für Aufgaben einrichten möchten, damit der Name des Projektmanagers im Meldungstext steht, können wir folgendes Template benutzen: ${object.manager_id.name}."
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:363
+#, python-format
+msgid "Invalid model domain"
+msgstr "Falsche Domain fürs Modell"
+
+#. module: alarm
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm___last_update
+#: model:ir.model.fields,field_description:alarm.field_alarm_info_dialog___last_update
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification___last_update
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview___last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: alarm
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_write_uid
+#: model:ir.model.fields,field_description:alarm.field_alarm_info_dialog_write_uid
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_write_uid
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt geändert von"
+
+#. module: alarm
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_write_date
+#: model:ir.model.fields,field_description:alarm.field_alarm_info_dialog_write_date
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_write_date
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:115
+#: selection:alarm.alarm,current_user_group:0
+#: model:res.groups,name:alarm.group_alarm_manager
+#, python-format
+msgid "Manager"
+msgstr "Manager"
+
+#. module: alarm
+#: code:addons/alarm/wizards/info_dialog.py:21
+#: model:ir.model.fields,field_description:alarm.field_alarm_info_dialog_message
+#, python-format
+msgid "Message"
+msgstr "Text"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:60
+#: code:addons/alarm/models/notification.py:27
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_model_id
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_model_id
+#: model:ir.ui.view,arch_db:alarm.alarm_search_view
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+#, python-format
+msgid "Model"
+msgstr "Modell"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:61
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_model_id
+#, python-format
+msgid "Model (e.g., Project Task, Lead...) whose records may trigger the generation of alarm notifications"
+msgstr "Modell (z.B, Aufgabe, Interessente...), dessen Datensätze die Generation von Alarmmeldungen auslösen könnten"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:63
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_model_domain
+#, python-format
+msgid "Model Domain"
+msgstr "Modell-Domain"
+
+#. module: alarm
+#: code:addons/alarm/wizards/notification_message_preview.py:35
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_model_to_preview
+#, python-format
+msgid "Model to Preview"
+msgstr "Modell zur Vorschau"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.alarm_search_view
+msgid "My Alarms"
+msgstr "Meine Alarme"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+msgid "My Notifications"
+msgstr "Meine Alarmmeldungen"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:52
+#: code:addons/alarm/models/notification.py:25
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_name
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_name
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+#: model:ir.ui.view,arch_db:alarm.alarm_search_view
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+#, python-format
+msgid "Name"
+msgstr "Name"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:154
+#, python-format
+msgid "No user set to be notified. Please set the \"Notify Only Me\" flag or specify a user field or add a user to the list of explicit users to notify."
+msgstr "Kein Benutzer wurde eingegeben, um Meldungen zu bekommen. Markieren Sie bitte das Feld \"Nur ich bekomme Meldungen\", geben Sie ein Benutzerfeld ein oder fügen Sie einen Benutzer zu der Liste von expliziten Benutzern, die Meldungen bekommen müssen, hinzu."
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+msgid "Note that you can add dynamic information to the <i>Notification Message</i> by using MAKO templates such as <i>${object.name}</i> or <i>${object.create_date}</i>.\n"
+"                                Then, you can preview the resulting message by clicking on the <i>Preview Notification Message</i> button."
+msgstr "Berücksichtigen Sie, dass Sie dynamische Informationen zum Meldungstext hinzufügen können, indem Sie Mako Templates wie <i>${object.name}</i> oder <i>${object.create_date}</i> benutzen.\n"
+"                                Dann können Sie den resultierenden Text vorschauen, indem Sie auf den <i>Vorschau des Meldungstextes</i> Button klicken."
+
+#. module: alarm
+#: code:addons/alarm/models/notification.py:31
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_notes
+#: model:ir.ui.view,arch_db:alarm.notification_form_view
+#, python-format
+msgid "Notes"
+msgstr "Notizen"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+msgid "Notification"
+msgstr "Meldung"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:100
+#: code:addons/alarm/models/notification.py:30
+#: code:addons/alarm/wizards/notification_message_preview.py:37
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_notification_message
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_notification_message
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_notification_message
+#: model:ir.ui.view,arch_db:alarm.notification_form_view
+#, python-format
+msgid "Notification Message"
+msgstr "Meldungstext"
+
+#. module: alarm
+#: model:ir.model,name:alarm.model_alarm_notification_message_preview
+msgid "Notification Message Preview"
+msgstr "Vorschau des Meldungstextes"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:113
+#: selection:alarm.alarm,current_user_group:0
+#: model:res.groups,name:alarm.group_alarm_notification_user
+#, python-format
+msgid "Notification User"
+msgstr "Meldungsbenutzer"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:89
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_notify_only_me
+#, python-format
+msgid "Notify Only Me"
+msgstr "Nur ich bekomme Meldungen"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:82
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_date_number
+#, python-format
+msgid "Number of Days"
+msgstr "Anzahl von Tagen"
+
+#. module: alarm
+#: code:addons/alarm/models/notification.py:32
+#: selection:alarm.notification,state:0
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+#, python-format
+msgid "Open"
+msgstr "Offen"
+
+#. module: alarm
+#: code:addons/alarm/wizards/notification_message_preview.py:38
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_preview
+#, python-format
+msgid "Preview"
+msgstr "Vorschau"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+msgid "Preview Notification Message"
+msgstr "Vorschau des Meldungstextes"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:64
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_model_domain
+#, python-format
+msgid "Python domain used to select only records with certain characteristics. For example, we can configure an alarm to generate notifications only for records in the draft state and whose creator is me by using the following domain: ['&', ('state', '=', 'draft'), ('create_uid', '=', my_uid)]\n"
+"\n"
+"The following variables and libraries are available:\n"
+"- my_uid: variable with my user ID.\n"
+"- date: library to manage dates (e.g., date.today())\n"
+"- datetime: library to manage date with times (e.g., datetime.now())\n"
+"- timedelta: library to manage time deltas (e.g., date.today() + timedelta(days=2))"
+msgstr "Python Domain benutzt, um nur Datensätze mit bestimmten Merkmalen auszuwählen. Zum Beispiel, wir können folgende Domain eingeben, um eine Alarm so einzurichten, dass sie nur Meldungen für Datensätze im Status Entwurf, die ich angelegt habe, generiert: ['&', ('state', '=', 'draft'), ('create_uid', '=', my_uid)]\n"
+"\n"
+"Folgende Variablen und Libraries stehen zur Verfügung:\n"
+"- my_uid: Variable mit meinem Benutzer-ID.\n"
+"- date: Library, um Daten zu bearbeiten (z.B., date.today())\n"
+"- datetime: Library, um Daten mit Uhrzeiten zu bearbeiten (z.B., datetime.now())\n"
+"- timedelta: Library, um Time Deltas zu bearbeiten (z.B., date.today() + timedelta(days=2))"
+
+#. module: alarm
+#: code:addons/alarm/models/notification.py:29
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_record
+#, python-format
+msgid "Record"
+msgstr "Datensatz"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+msgid "Record Selection"
+msgstr "Datensatzauswahl"
+
+#. module: alarm
+#: code:addons/alarm/wizards/notification_message_preview.py:36
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_message_preview_res_id_to_preview
+#, python-format
+msgid "Record to Preview"
+msgstr "Datensatz zur Vorschau"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:53
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_name
+#, python-format
+msgid "Short descriptive name for the alarm. This name is assigned to all notifications generated by this alarm."
+msgstr "Kurzer aber deskriptiver Name für den Alarm. Alle von diesem Alarm generierten Meldungen bekommen diesen Namen."
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:111
+#: code:addons/alarm/models/notification.py:34
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_state
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_state
+#: model:ir.ui.view,arch_db:alarm.alarm_search_view
+#: model:ir.ui.view,arch_db:alarm.notification_search_view
+#, python-format
+msgid "State"
+msgstr "Status"
+
+#. module: alarm
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+msgid "Trigger Alarm"
+msgstr "Alarm auslösen"
+
+#. module: alarm
+#: code:addons/alarm/models/notification.py:24
+#: model:ir.model.fields,field_description:alarm.field_alarm_notification_alarm_id
+#, python-format
+msgid "Triggered Alarm"
+msgstr "Ausgelöster Alarm"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:58
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_triggered_on
+#: model:ir.ui.view,arch_db:alarm.alarm_form_view
+#, python-format
+msgid "Triggered on"
+msgstr "Ausgelöst am"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:92
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_user_field_id
+#, python-format
+msgid "User Field"
+msgstr "Benutzerfeld"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:115
+#: model:ir.model.fields,field_description:alarm.field_alarm_alarm_current_user_group
+#, python-format
+msgid "User Group of Current User"
+msgstr "Benutzergruppe des gegenwartigen Benutzers"
+
+#. module: alarm
+#: code:addons/alarm/models/alarm.py:96
+#: model:ir.model.fields,help:alarm.field_alarm_alarm_user_field_id
+#, python-format
+msgid "User field within the specified *Model* containing the user(s) to be notified.\n"
+"\n"
+"If *Notify Only Me* is set, I will be the only person to be notified but I must be also the user specified in this field."
+msgstr "Benutzerfeld innerhalb des eingegebenen *Modells*, das den/die Benutzer enthält, der/die eine Meldung bekommen muss/müssen.\n"
+"\n"
+"Wenn das Feld *Nur ich bekomme Meldungen* markiert ist, dann bekomme nur ich Meldungen, aber nur wenn ich der Benutzer bin, der in diesem Feld eingegeben wurde."
+
+#. module: alarm
+#: model:ir.model,name:alarm.model_ir_values
+msgid "ir.values"
+msgstr "ir.values"
+

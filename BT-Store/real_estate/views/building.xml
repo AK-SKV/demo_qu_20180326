@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<odoo>
+    <data>
+
+        <record id="action_real_estate_sale_order_tree" model="ir.actions.act_window">
+            <field name="name">Sales</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('building_id','=',active_id)]</field>
+            <field name="context">{'default_building_id': active_id}</field>
+        </record>
+
+        <record id="action_real_estate_purchase_order_tree" model="ir.actions.act_window">
+            <field name="name">Purchases</field>
+            <field name="res_model">purchase.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('building_id','=',active_id)]</field>
+            <field name="context">{'default_building_id': active_id}</field>
+        </record>
+
+        <record id="action_real_estate_sale_subscription_tree" model="ir.actions.act_window">
+            <field name="name">Subscriptions</field>
+            <field name="res_model">sale.subscription</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('building_id','=',active_id)]</field>
+            <field name="context">{'default_building_id': active_id}</field>
+        </record>
+
+        <record id="action_real_estate_customer_invoice_tree" model="ir.actions.act_window">
+            <field name="name">Customer Invoices</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('building_id','=',active_id),('type','=','out_invoice')]</field>
+            <field name="context">{'default_building_id': active_id,
+                                   'default_type':'out_invoice',
+                                   'form_view_ref':'real_estate.real_estate_invoice_customer_form',
+                                   'tree_view_ref':'account.invoice_tree',
+                                   'search_view_ref':'account.view_account_invoice_filter'}</field>
+        </record>
+
+        <record id="action_real_estate_customer_refund_tree" model="ir.actions.act_window">
+            <field name="name">Customer Refunds</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('building_id','=',active_id),('type','=','out_refund')]</field>
+            <field name="context">{'default_building_id': active_id,
+                                   'default_type':'out_refund',
+                                   'form_view_ref':'real_estate.real_estate_invoice_customer_form',
+                                   'tree_view_ref':'account.invoice_tree',
+                                   'search_view_ref':'account.view_account_invoice_filter'}</field>
+        </record>
+
+        <record id="action_real_estate_supplier_invoice_tree" model="ir.actions.act_window">
+            <field name="name">Supplier Invoices</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('building_id','=',active_id),('type','=','in_invoice')]</field>
+            <field name="context">{'default_building_id': active_id,
+                                   'default_type':'in_invoice',
+                                   'form_view_ref':'real_estate.real_estate_invoice_supplier_form',
+                                   'tree_view_ref':'account.invoice_supplier_tree',
+                                   'search_view_ref':'account.view_account_invoice_filter'}</field>
+        </record>
+
+        <record id="action_real_estate_supplier_refund_tree" model="ir.actions.act_window">
+            <field name="name">Supplier Refunds</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('building_id','=',active_id),('type','=','in_refund')]</field>
+            <field name="context">{'default_building_id': active_id,
+                                   'default_type':'in_refund',
+                                   'form_view_ref':'real_estate.real_estate_invoice_supplier_form',
+                                   'tree_view_ref':'account.invoice_supplier_tree',
+                                   'search_view_ref':'account.view_account_invoice_filter'}</field>
+        </record>
+
+        <record model="ir.ui.view" id="real_estate_building_form" >
+            <field name="name">real_estate.building.form</field>
+            <field name="model">real_estate.building</field>
+            <field name="arch" type="xml">
+                <form string="Building">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" type="action" icon="fa-usd" name="%(action_real_estate_sale_order_tree)d">
+                                <field string="Sales" name="sale_order_count" widget="statinfo" />
+                            </button>
+                            <button class="oe_stat_button" type="action" icon="fa-shopping-cart" name="%(action_real_estate_purchase_order_tree)d">
+                                <field string="Purchases" name="purchase_order_count" widget="statinfo" />
+                            </button>
+                            <button class="oe_stat_button" type="action" icon="fa-book" name="%(action_real_estate_sale_subscription_tree)d">
+                                <field string="Subscriptions" name="sale_subscription_count" widget="statinfo" />
+                            </button>
+                            <button class="oe_stat_button" type="action" icon="fa-pencil-square-o" name="%(action_real_estate_customer_invoice_tree)d">
+                                <field string="Customer Invoices" name="customer_invoice_count" widget="statinfo" />
+                            </button>
+                            <button class="oe_stat_button" type="action" icon="fa-pencil-square-o" name="%(action_real_estate_customer_refund_tree)d">
+                                <field string="Customer Refunds" name="customer_refund_count" widget="statinfo" />
+                            </button>
+                            <button class="oe_stat_button" type="action" icon="fa-pencil-square-o" name="%(action_real_estate_supplier_invoice_tree)d">
+                                <field string="Supplier Invoices" name="supplier_invoice_count" widget="statinfo" />
+                            </button>
+                            <button class="oe_stat_button" type="action" icon="fa-pencil-square-o" name="%(action_real_estate_supplier_refund_tree)d">
+                                <field string="Supplier Refunds" name="supplier_refund_count" widget="statinfo" />
+                            </button>
+                          </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" />
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="building_category_ids" widget="many2many_tags" placeholder="Tags..." />
+                            <field name="parent_id" />
+                            <label for="street" string="Address" attrs="{'invisible': [('parent_id','!=', False)]}" />
+                            <div class="o_address_format">
+                                <field name="street" placeholder="Street..." class="o_address_street" attrs="{'invisible': [('parent_id', '!=', False)]}" />
+                                <field name="street2" placeholder="Street 2..." class="o_address_street" attrs="{'invisible': [('parent_id', '!=', False)]}" />
+                                <field name="city" placeholder="City" class="o_address_city" attrs="{'invisible': [('parent_id', '!=', False)]}" />
+                                <field name="state_id" placeholder="State" class="o_address_state" attrs="{'invisible': [('parent_id', '!=', False)]}" />
+                                <field name="zip" placeholder="ZIP" class="o_address_zip" attrs="{'invisible': [('parent_id', '!=', False)]}" />
+                                <field name="country_id" placeholder="Country" class="o_address_country" attrs="{'invisible': [('parent_id', '!=', False)]}" />
+                            </div>
+                            <field name="size" />
+                        </group>
+                        <notebook>
+                            <page string="Subbuildings">
+                                <field name="child_ids" context="{'default_parent_id': active_id}">
+                                    <tree editable="bottom">
+                                        <field name="name" />
+                                        <field name="building_category_ids" widget="many2many_tags" placeholder="Tags..." />
+                                        <field name="size" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Contact">
+                                <field name="contact_ids" context="{'default_building_id': active_id}">
+                                    <tree editable="bottom">
+                                        <field name="partner_id" context="{'default_real_estate':True}" />
+                                        <field name="type" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="real_estate_building_search">
+            <field name="name">real_estate.building.search</field>
+            <field name="model">real_estate.building</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="building_category_ids" />
+                    <field name="parent_id" />
+                    <field name="street" />
+                    <field name="street2" />
+                    <field name="city" />
+                    <field name="state_id" />
+                    <field name="zip" />
+                    <field name="country_id" />
+                    <field name="size" />
+                    <group>
+                        <filter string="Country" domain="[]" context="{'group_by':'country_id'}"/>
+                        <filter string="State" domain="[]" context="{'group_by':'state_id'}"/>
+                        <filter string="City" domain="[]" context="{'group_by':'city'}"/>
+                        <filter string="Building" domain="[]" context="{'group_by':'parent_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="real_estate_building_tree">
+            <field name="name">real_estate.building.tree</field>
+            <field name="model">real_estate.building</field>
+            <field name="arch" type="xml">
+                <tree string="Building">
+                    <field name="name" />
+                    <field name="parent_id" />
+                    <field name="street" />
+                    <field name="street2" />
+                    <field name="city" />
+                    <field name="state_id" />
+                    <field name="zip" />
+                    <field name="country_id" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="real_estate_building_kanban">
+            <field name="name">real_estate.building.kanban</field>
+            <field name="model">real_estate.building</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="name"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="o_kanban_tags_section">
+                                    <span class="oe_kanban_list_many2many">
+                                        <field name="building_category_ids"/>
+                                    </span>
+                                </div>
+                                <div class="oe_kanban_details">
+                                    <strong><field name="name"/></strong>
+                                    <ul>
+                                        <li>
+                                            <t t-if="record.street.raw_value">
+                                                <field name="street" />
+                                            </t>
+                                            <t t-if="record.street2.raw_value">
+                                                <field name="street2" />
+                                            </t>
+                                        </li>
+                                        <li>
+                                            <t t-if="record.zip.raw_value">
+                                                <field name="zip" />
+                                            </t>
+                                            <t t-if="record.city.raw_value">
+                                                <field name="city" />
+                                            </t>
+                                        </li>
+                                        <li t-if="record.country_id.raw_value">
+                                            <field name="country_id" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+    </data>
+</odoo>

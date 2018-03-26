@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<odoo>
+    <data>
+
+        <record id="action_real_estate_building_tree" model="ir.actions.act_window">
+            <field name="name">Buildings</field>
+            <field name="res_model">real_estate.building</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add a building.
+                </p>
+            </field>
+        </record>
+
+        <record id="action_real_estate_partner_tree" model="ir.actions.act_window">
+            <field name="name">Contact</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[('real_estate','=',True)]</field>
+            <field name="context">{'default_real_estate':True}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add a contact.
+                </p>
+            </field>
+        </record>
+
+        <record id="action_real_estate_building_category_tree" model="ir.actions.act_window">
+            <field name="name">Building Categories</field>
+            <field name="res_model">real_estate.building.category</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="real_estate_menu" name="Real Estate" sequence="309" web_icon="real_estate,static/description/icon.png" />
+
+        <menuitem id="real_estate_building_menu" name="Buildings"
+            sequence="1"
+            parent="real_estate_menu"
+            action="action_real_estate_building_tree" />
+
+        <menuitem id="real_estate_partner_menu" name="Contact"
+            sequence="2"
+            parent="real_estate_menu"
+            action="action_real_estate_partner_tree" />
+
+        <menuitem id="real_estate_configuration_menu" name="Configuration"
+            sequence="3"
+            parent="real_estate_menu"
+            groups="real_estate.group_real_estate_manager" />
+
+        <menuitem id="real_estate_building_category_menu" name="Building Categories"
+            sequence="31"
+            parent="real_estate_configuration_menu"
+            action="action_real_estate_building_category_tree"
+            groups="real_estate.group_real_estate_manager" />
+
+    </data>
+</odoo>

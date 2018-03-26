@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_alarm_notification_notification_user,access_alarm_notification_notification_user,alarm.model_alarm_notification,group_alarm_notification_user,1,1,1,1
+access_alarm_alarm_user,access_alarm_alarm_user,alarm.model_alarm_alarm,group_alarm_user,1,1,1,1

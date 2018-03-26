@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_import_data_conversion,access_import_data_conversion,model_import_data_conversion,base.group_user,1,1,1,1
+access_import_data_message,access_import_data_message,model_import_data_message,base.group_user,1,1,1,1
+access_import_data_object,access_import_data_object,model_import_data_object,base.group_user,1,1,1,1
+access_import_data_object_column,access_import_data_object_column,model_import_data_object_column,base.group_user,1,1,1,1
+access_import_data_settings,access_import_data_settings,model_import_data_settings,base.group_user,1,1,1,1
+access_python_module,access_python_module,model_python_module,base.group_user,1,1,1,1

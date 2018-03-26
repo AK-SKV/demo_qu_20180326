@@ -1,0 +1,166 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#875A7B;">Have you ever wanted to mark a whole notebook page or a whole group as read-only?</h2>
+        <h3 class="oe_slogan">Here is the solution!</h3>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h4 class="oe_slogan">The easiest way to handle read-only attributes</h4>
+        <div class="oe_span6">
+            <p class="oe_mt32 text-justify">
+                It's no longer necessary to add read-only attributes to all fields in a section. You can set the read-only attribute on the parent element, and this module does the rest.
+            </p>
+            <p class="oe_mt32">
+                <pre>&lt;group <span style="color:red">readonly="1"</span>&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;...
+&lt;/group&gt;</pre>
+            </p>
+        </div>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="group.png">
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_separator">
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h4 class="oe_slogan">Works on all elements</h4>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="page.png">
+        </div>
+        <div class="oe_span6">
+            <p class="oe_mt32 text-justify">
+                You can set the read-only attribute on all elements you want. It works on forms, groups, pages and all other elements.
+            </p>
+            <p class="oe_mt32 text-justify">
+                This module will pass the read-only attributes recursively to all sub elements in the same view definition.
+            </p>
+            <p class="oe_mt32">
+                <pre>&lt;page <span style="color:red">readonly="1"</span>&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;...
+&lt;/page&gt;</pre>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_separator">
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h4 class="oe_slogan">Force an inner read-only attribute</h4>
+        <div class="oe_span6">
+            <p class="oe_mt32 text-justify">
+                If you want to force a read-only attribute from a sub element, you can set the <samp>options="{'force_this_readonly': True}"</samp> option on the element, and the read-only attribute of the current element will be passed to its sub elements.
+            </p>
+            <p class="oe_mt32 text-justify">
+                With this, you can force 'True' or 'False' for the read-only attribute as well as force using the read-only attribute from the view definition on the current and on its sub elements.
+            </p>
+            <p class="oe_mt32">
+                <pre>&lt;page <span style="color:red">readonly="1"</span>&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;group string="Sale" <span style="color:red">readonly="0" options="{'force_this_readonly': True}"</span>&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;field name="property_payment_term_id"/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;field name="credit"/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;field name="trust" <span style="color:red">readonly="1" options="{'force_this_readonly': True}"</span>/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/group&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;group string="Purchase"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/group&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;group string="Fiscal Information"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/group&gt;
+&lt;/page&gt;</pre>
+            </p>
+        </div>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="inner.png">
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_separator">
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h4 class="oe_slogan">readonly="x" vs. attrs="{'readonly': x}"</h4>
+        <div class="oe_span12">
+            <p class="oe_mt32 text-justify">
+                It works with the <samp>readonly="x"</samp> attribute as well as with the <samp>attrs="{'readonly': x}"</samp> attribute.
+            </p>
+            <p class="oe_mt32">
+                <pre>&lt;page <span style="color:red">attrs="{'readonly': [('is_company', '=', False)]}"</span>&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;...
+&lt;/page&gt;</pre>
+            </p>
+        </div>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="attrs_read.png">
+        </div>
+        <div class="oe_span6">
+            <img class="oe_picture oe_screenshot" src="attrs_write.png">
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_separator">
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h4 class="oe_slogan">All you need to know</h4>
+        <table width="100%">
+            <tr>
+                <td width="50%">
+                    <table width="100%">
+                        <tr>
+                            <td style="vertical-align: middle">
+                                <h3 class="oe_slogan"><span class="fa fa-chevron-right fa-3x"/></h3>
+                            </td>
+                            <td style="vertical-align: middle">
+                                <h3 class="oe_slogan">All read-only attributes will be passed recursively to all sub elements</h3>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="50%">
+                    <table width="100%">
+                        <tr>
+                            <td style="vertical-align: middle">
+                                <h3 class="oe_slogan"><span class="fa fa-chevron-right fa-3x"/></h3>
+                            </td>
+                            <td style="vertical-align: middle">
+                                <h3 class="oe_slogan">You can force an inner read-only attribute with:<br/><samp>options="{'force_this_readonly': True}"</samp></h3>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section class="oe_container oe_separator">
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h4 class="oe_slogan">Contacting</h4>
+        <div class="oe_span12" style="text-align: center">
+            <span class="fa fa-question-circle fa-4x pull-center"/><br/>
+            For questions related to this application, please contact us here:&nbsp;&nbsp;
+            <a href="mailto:support@braintec-group.com?subject=[Odoo Apps] Question about readonly_inheritance">
+                <span class="fa fa-envelope-o fa-2x pull-center"/>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_separator">
+</section>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_view_form_inherit_custom_mobile_views" model="ir.ui.view">
+        <field name="name">ir.ui.view.form.inherit</field>
+        <field name="model">ir.ui.view</field>
+        <field name="inherit_id" ref="base.view_view_form"/>
+        <field name="arch" type="xml">
+            <field name="priority" position="after">
+                <field name="is_for_mobiles" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

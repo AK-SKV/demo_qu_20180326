@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="module_category_alarms" model="ir.module.category">
+            <field name="name">Alarms</field>
+            <field name="description">Allows you to create alarms for any record with a date field</field>
+            <field name="sequence">3</field>
+        </record>
+
+
+
+        <record id="group_alarm_notification_user" model="res.groups">
+            <field name="name">Notification User</field>
+            <field name="category_id" ref="module_category_alarms"/>
+        </record>
+
+        <record id="group_alarm_user" model="res.groups">
+            <field name="name">Alarm User</field>
+            <field name="category_id" ref="module_category_alarms"/>
+            <field name="implied_ids" eval="[(4, ref('alarm.group_alarm_notification_user'))]"/>
+        </record>
+
+        <record id="group_alarm_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="module_category_alarms"/>
+            <field name="implied_ids" eval="[(4, ref('alarm.group_alarm_user'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>
+
+
+
+        <record id="rule_alarm_notification_notification_user" model="ir.rule">
+            <field name="name">Alarm Notification - Notification User</field>
+            <field name="model_id" ref="model_alarm_notification"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+        </record>
+
+        <record id="rule_alarm_alarm_user" model="ir.rule">
+            <field name="name">Alarm - Alarm User</field>
+            <field name="model_id" ref="model_alarm_alarm"/>
+            <field name="groups" eval="[(4, ref('alarm.group_alarm_user'))]"/>
+            <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        </record>
+
+        <record id="rule_alarm_manager" model="ir.rule">
+            <field name="name">Alarm - Manager</field>
+            <field name="model_id" ref="model_alarm_alarm"/>
+            <field name="groups" eval="[(4, ref('alarm.group_alarm_manager'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="rule_alarm_notification_manager" model="ir.rule">
+            <field name="name">Alarm - Notification Manager</field>
+            <field name="model_id" ref="model_alarm_notification"/>
+            <field name="groups" eval="[(4, ref('alarm.group_alarm_manager'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+    </data>
+</odoo>

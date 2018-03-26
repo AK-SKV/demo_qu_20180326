@@ -1,0 +1,236 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* leaves_management_portal_users
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-16 09:41+0000\n"
+"PO-Revision-Date: 2017-11-16 09:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "<span class=\"fa fa-trash-o\"/> Delete"
+msgstr "<span class=\"fa fa-trash-o\"/> Löschen"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "Afternoon"
+msgstr "Nachmittags frei"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:57
+#, python-format
+msgid "All"
+msgstr "Alle"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "Confirm\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "Bestätigen\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.leaves_partner_with_no_mail
+msgid "Contact with the system administrator."
+msgstr "Bitte kontaktieren Sie den Systemadministrator."
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "Create"
+msgstr "Anlegen"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "Current state of the leave"
+msgstr "Aktueller Abwesenheits-Status"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:401
+#, python-format
+msgid "Date from should have the following format: '%s'"
+msgstr "Das Startdatum muss in folgendem Format eingegeben werden: '%s'"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:411
+#, python-format
+msgid "Date to should have the following format: '%s'"
+msgstr "Das Enddatum muss in folgendem Format eingegeben werden: '%s'"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "Delete"
+msgstr "Löschen"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:37
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+#, python-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: leaves_management_portal_users
+#. openerp-web
+#: code:addons/leaves_management_portal_users/static/src/js/leaves_management_portal_users.js:83
+#: code:addons/leaves_management_portal_users/static/src/js/leaves_management_portal_users.js:88
+#, python-format
+msgid "Do you really want to remove these records?"
+msgstr "Möchten Sie diese Datensätze wirklich löschen?"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "Employee"
+msgstr "Mitarbeiter"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "End Date"
+msgstr "Enddatum"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "End date"
+msgstr "Enddatum"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:51
+#, python-format
+msgid "Future leaves"
+msgstr "Zukünftige Abwesenheiten"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "Leave Type"
+msgstr "Abwesenheitstyp"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "Leave Type..."
+msgstr "Abwesenheitstyp..."
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "Leave type"
+msgstr "Abwesenheitstyp"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.portal_layout
+msgid "Leaves"
+msgstr "Abwesenheitsanträge"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "Morning"
+msgstr "Vormittags frei"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "My Leaves"
+msgstr "Meine Abwesenheiten"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "New Leave Request"
+msgstr "Neuer Abwesenheitsantrag"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:36
+#, python-format
+msgid "Newest"
+msgstr "Neuste"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "Number of days"
+msgstr "Anzahl Tage"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:265
+#, python-format
+msgid "Please make sure that your user has an employee assigned (contact with the administrator)."
+msgstr "Stellen Sie sicher, dass ihr Benutzer mit einem Mitarbeiter verknüpft ist (kontaktieren Sie den Administrator)."
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "Reset to draft\n"
+"                                        <span class=\"fa fa-refresh\"/>"
+msgstr "Auf Entwurf setzen\n"
+"                                        <span class=\"fa fa-refresh\"/>"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:424
+#, python-format
+msgid "Some required fields are empty."
+msgstr "Einige Pflichtfelder sind leer."
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "Start Date"
+msgstr "Startdatum"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "Start date"
+msgstr "Startdatum"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "Status"
+msgstr "Status"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leave
+msgid "The request has been refused due to:"
+msgstr "Der Antrag wurde abgelehnt durch:"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:248
+#: code:addons/leaves_management_portal_users/controllers/main.py:415
+#, python-format
+msgid "The start date must be anterior to the end date."
+msgstr "Das Startdatum muss vor dem Enddatum liegen."
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.my_leaves
+msgid "There are no leaves yet."
+msgstr "Keine Abwesenheiten vorhanden."
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:55
+#, python-format
+msgid "This Month"
+msgstr "Dieser Monat"
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:53
+#, python-format
+msgid "This Week"
+msgstr "Diese Woche"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.leaves_partner_with_no_mail
+msgid "Unable to send email, please configure the sender's email address."
+msgstr ""
+"Es ist nicht möglich, E-Mails zu versenden, bitte geben Sie die E-Mail-"
+"Adresse des Absenders an."
+
+#. module: leaves_management_portal_users
+#: code:addons/leaves_management_portal_users/controllers/main.py:432
+#, python-format
+msgid "Unknown field '%s'"
+msgstr "Unbekanntes Feld '%s'"
+
+#. module: leaves_management_portal_users
+#: model:ir.ui.view,arch_db:leaves_management_portal_users.portal_my_home
+msgid "Your leaves"
+msgstr "Abwesenheiten"

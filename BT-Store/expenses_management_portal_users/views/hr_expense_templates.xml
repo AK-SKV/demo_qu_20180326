@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_frontend" inherit_id="website_enterprise.assets_frontend" name="Expenses">
+      <xpath expr="." position="inside">
+          <link rel="stylesheet" href="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.css"/>
+          <link rel="stylesheet" href="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.css"/>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ar.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.az.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.bg.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.bs.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ca.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.cs.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.cy.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.da.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.de.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.el.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.en-AU.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.en-GB.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.eo.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.es.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.et.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.eu.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fa.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fi.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fo.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fr-CH.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.gl.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.he.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.hr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.hu.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.hy.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.id.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.is.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.it.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.it-CH.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ja.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ka.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.kh.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.kk.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ko.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.kr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.lt.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.lv.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.me.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.mk.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.mn.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ms.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.nb.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.nl.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.nl-BE.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.no.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pl.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pt.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ro.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.rs.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.rs-latin.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ru.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sk.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sl.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sq.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sr-latin.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sv.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sw.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.th.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.tr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.uk.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.vi.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+          <link rel="stylesheet" href="/expenses_management_portal_users/static/src/js/expenses_management_portal_users.css"/>
+          <script type="text/javascript" src="/expenses_management_portal_users/static/src/js/expenses_management_portal_users.js"/>
+      </xpath>
+    </template>
+
+    <template id="portal_layout" name="Portal layout: expenses menu entry"
+              inherit_id="website_portal.portal_layout" priority="45">
+        <xpath expr="//ul[contains(@class,'o_portal_submenu')]" position="inside">
+            <li t-att-class="page_name == 'expenses' and 'active' or ''">
+                 <a href="/my/expenses">Expenses</a>
+            </li>
+        </xpath>
+    </template>
+
+    <template id="portal_my_home" name="Portal My Home: expenses"
+              inherit_id="website_portal.portal_my_home" priority="40">
+        <xpath expr="//div[contains(@class,'o_my_home_content')]" position="inside">
+            <h3 class="page-header">
+                <a href="/my/expenses">Your expenses
+                    <small class="ml8">
+                        <t t-if="expenses">
+                            <span class='badge'><t t-esc="expenses"/></span>
+                        </t>
+                        <t t-if="not expenses">
+                            There are currently no expenses for your account.
+                        </t>
+                    </small>
+                </a>
+            </h3>
+        </xpath>
+    </template>
+
+    <template id="my_expenses" name="My expenses">
+        <t t-call="website_portal.portal_layout">
+            <div class="row">
+                <t t-if="request.session.get('error_unlink')">
+                    <div class="col-md-12">
+                        <div class="alert alert-danger">
+                            <t t-esc="request.session.get('error_unlink')" />
+                        </div>
+                    </div>
+                </t>
+                <h3 class="page-header">
+                    Expenses
+                    <div class="dropdown pull-right mr8">
+                        <button id="sortby" class="btn btn-default" type="button" data-toggle="dropdown">
+                            <span class="fa fa-sort fa-lg" /> <span t-esc="sortings.get(sortby, {}).get('label', sortings.get('date_from', {}).get('label', translate_func('Newest')))"/>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="sortby">
+                            <li t-foreach="sortings" t-as="option" t-attf-class="#{sortby == option and 'active'}">
+                                <a t-att-href="default_url + '?' + keep_query('date', sortby=option)">
+                                    <span t-esc="sortings.get(option).get('label')"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown pull-right mr8">
+                        <button id="date_filters" class="btn btn-default" type="button" data-toggle="dropdown">
+                            <span t-esc="date_filters.get(date, {}).get('label', date_filters.get('future_expenses', {}).get('label', translate_func('Future expenses')))"/>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="date_filters">
+                            <li t-foreach="date_filters" t-as="option" t-att-class="expense == option and 'active'">
+                                <a t-attf-href="/my/expenses?{{ keep_query('sortby', date=option) }}">
+                                    <span t-esc="date_filters.get(option).get('label')"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </h3>
+            </div>
+            <form id="delete_form" action="/my/expense/delete" method="post">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div class="clearfix">
+                    <a t-attf-href="/my/expense/create" class="btn btn-default btn-primary mb32">Create</a>
+                    <button type="submit" id="button_to_remove_expenses" class="btn btn-default btn-danger mb32 o_hidden">
+                        Delete
+                    </button>
+                </div>
+                <div class="panel panel-default o_expenses_management_portal_users">
+                    <t t-if="not expenses">
+                        <div class="alert alert-warning mt8" role="alert">
+                            There are no expenses yet.
+                        </div>
+                    </t>
+                    <table t-if="expenses" class="table table-hover status_table">
+                        <thead>
+                            <tr class="active">
+                                <th class="col-md-1 o_list_record_selector">
+                                    <div class="o_checkbox">
+                                        <input type="checkbox" name="select_all" /><span/>
+                                    </div>
+                                </th>
+                                <th class="col-md-6">Date</th>
+                                <th class="col-md-6">Expense Description</th>
+                                <th class="col-md-6 text-right">Total</th>
+                                <th class="col-md-6">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="expenses" t-as="expense">
+                                <td class="o_list_record_selector">
+                                    <div class="o_checkbox">
+                                        <input type="checkbox" t-att-name="expense.id" t-att-checked="checked"
+                                               t-if="expense.state not in ['post', 'done']"/><span/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a t-attf-href="/my/expense/#{expense.id}?{{ keep_query() }}">
+                                        <span t-field="expense.date"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a t-attf-href="/my/expense/#{expense.id}?{{ keep_query() }}">
+                                        <span t-field="expense.name"/>
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a t-attf-href="/my/expense/#{expense.id}?{{ keep_query() }}">
+                                        <span t-field="expense.total_amount"
+                                              t-options='{"widget": "monetary",
+                                                          "display_currency": expense.currency_id}'/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <span>
+                                        <span t-att-class="get_class_state(expense.state)"
+                                              title="Current state of the expense"
+                                              t-esc="get_description_state(expense.state)" />
+                                        <t t-if="expense.state == 'draft'">
+                                            <a t-attf-href="/my/expense/submit/#{expense.id}"
+                                               class="btn btn-default btn-info submit_to_manager"
+                                               t-att-id="'button_to_submit_expense_{0}'.format(expense.id)">
+                                                Submit to manager
+                                            </a>
+                                        </t>
+                                        <t t-if="expense.state == 'refused'">
+                                            <a t-attf-href="/my/expense/submit/#{expense.id}"
+                                               class="btn btn-default btn-info submit_to_manager"
+                                               t-att-id="'button_to_submit_expense_{0}'.format(expense.id)">
+                                                Resubmit
+                                            </a>
+                                        </t>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            <div t-if="pager" class="o_portal_pager text-center">
+                <t t-call="website.pager"/>
+            </div>
+        </t>
+    </template>
+
+    <template id="my_expense" name="My expense">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <div class="oe_structure">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ol class="breadcrumb mt8">
+                                    <li><a href="/my/home"><i class="fa fa-home"/></a></li>
+                                    <li><a t-attf-href="/my/expenses?#{keep_query()}">My Expenses</a></li>
+                                    <li t-if="expense"><span t-field="expense.name"/></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 t-if="not expense">
+                        New Expense
+                    </h1>
+                    <form action="/my/expense/update" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <div class="row o_expenses_management_portal_users">
+                            <div class="col-md-8">
+                                <div class='row'>
+                                    <div class="col-md-12">
+                                      <div t-if="error_message" class="alert alert-danger">
+                                          <t t-foreach="error_message" t-as="err"><t t-esc="err"/><br /></t>
+                                      </div>
+                                    </div>
+                                    <div t-attf-class="form-group #{error.get('name') and 'has-error' or ''} col-lg-12">
+                                        <label class="control-label" for="name">Expense Description</label>
+                                        <input type="text" name="name" class="form-control"
+                                               t-att-disabled="expense and expense.state not in ['draft', 'refused']"
+                                               t-att-value="name or (expense and expense.name)" />
+                                    </div>
+                                    <div t-attf-class="form-group #{error.get('product_id') and 'has-error' or ''} col-lg-6">
+                                        <label class="control-label" for="product_id">Product</label>
+                                        <select name="product_id"
+                                                t-att-disabled="expense and expense.state not in ['draft', 'refused']"
+                                                class="form-control">
+                                            <option value="">Product...</option>
+                                            <t t-foreach="product_ids or []" t-as="product">
+                                                <option t-att-value="product.id"
+                                                        t-att-unit_amount="product.price_compute('standard_price')[product.id]"
+                                                        t-att-account="product.product_tmpl_id._get_product_accounts()['expense'].id"
+                                                        t-att-selected="product.id == (product_id or (expense and expense.product_id.id))">
+                                                    <t t-esc="product.display_name" />
+                                                </option>
+                                            </t>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label class="control-label" for="reference">Bill Reference</label>
+                                        <input type="text" name="reference" class="form-control"
+                                               t-att-disabled="expense and expense.state in ['post', 'done']"
+                                               t-att-value="reference or (expense and expense.reference)" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label class="control-label" for="unit_amount">Unit Price</label>
+                                        <input type="number" name="unit_amount" class="form-control" step="0.01" min="0"
+                                               t-att-disabled="expense and expense.state not in ['draft', 'refused']"
+                                               t-att-value="unit_amount or (expense and expense.unit_amount) or 1.00"/>
+                                    </div>
+                                    <div id="date" t-attf-class="form-group #{error.get('date') and 'has-error' or ''} col-lg-6">
+                                        <div>
+                                            <label class="control-label" for="date">Date</label>
+                                            <div id="datepicker-container-date">
+                                                <div id="datepicker_date"
+                                                     t-attf-class="input-group date datepicker col-lg-6">
+                                                    <input id="date_input" name="date"
+                                                           t-att-disabled="expense and expense.state not in ['draft', 'refused']"
+                                                           data-depends="true"
+                                                           t-att-value="date"
+                                                           type="text" maxlength="10" class="form-control"/>
+                                                    <span id="myid" class="input-group-addon">
+                                                        <i class="fa fa-calendar" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div t-attf-class="form-group #{error.get('quantity') and 'has-error' or ''} col-lg-6">
+                                        <label class="control-label" for="quantity">Quantity</label>
+                                        <input type="number" name="quantity" class="form-control" step="0.01" min="0"
+                                               t-att-disabled="expense and expense.state not in ['draft', 'refused']"
+                                               t-att-value="quantity or (expense and expense.quantity) or 1.00" />
+                                    </div>
+                                    <div t-attf-class="form-group col-lg-6">
+                                        <label class="control-label" for="account_id">Account</label>
+                                        <select name="account_id"
+                                                t-att-disabled="expense and expense.state in ['post', 'done']"
+                                                class="form-control">
+                                            <option value="">Account...</option>
+                                            <t t-foreach="accounts or []" t-as="account">
+                                                <option t-att-value="account.id"
+                                                        t-att-selected="account.id == (account_id or (expense and expense.account_id.id))">
+                                                    <t t-esc="account.display_name" />
+                                                </option>
+                                            </t>
+                                        </select>
+                                    </div>
+                                    <div t-attf-class="form-group col-lg-6">
+                                        <label class="control-label" for="payment_mode">Payment By</label>
+                                        <select name="payment_mode"
+                                                t-att-disabled="expense and expense.state in ['post', 'done']"
+                                                class="form-control">
+                                            <option value="own_account"
+                                                    t-att-selected="payment_mode or (expense and expense.payment_mode == 'own_account')">
+                                                Employee (to reimburse)
+                                            </option>
+                                            <option value="company_account"
+                                                    t-att-selected="payment_mode or (expense and expense.payment_mode == 'company_account')">
+                                                Company
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label class="control-label" for="description">Notes</label>
+                                        <textarea name="description" class="form-control" rows="4" cols="50"
+                                                  t-att-disabled="expense and expense.state in ['post', 'done']"><t t-esc="description or (expense and expense.description)"/></textarea>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label class="control-label" for="attachment">Attachment(s)</label>
+                                        <input type="file" name="attachment" value="attachment" id="attachment"
+                                               t-if="not expense or expense.state not in ['post', 'done']"/>
+                                        <div id="div_attachments" t-if="attachments">
+                                            <select multiple="multiple" id="select_attachments"
+                                                    t-att-disabled="expense and expense.state in ['post', 'done']">
+                                                <t t-foreach="attachments or []" t-as="attach">
+                                                    <option t-att-value="attach[0]">
+                                                        <t t-esc="attach[1]" />
+                                                    </option>
+                                                </t>
+                                            </select>
+                                            <button type="button" class="btn btn-danger btn-sm"
+                                                    t-if="expense and expense.state not in ['post', 'done']">
+                                                <span class="fa fa-trash-o"/> Remove selected attachment(s)
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div t-if="expense and expense.state == 'refused'" class="col-md-12">
+                                      <div t-if="expense and expense.last_refused_message" class="alert alert-danger">
+                                          <t t-raw="expense.last_refused_message"/>
+                                      </div>
+                                    </div>
+                                    <input type="hidden" name="expense_id" t-att-value="expense and expense.id"/>
+                                </div>
+                                <div class="clearfix">
+                                    <input type="checkbox" id="to_delete_checkbox" name="to_delete" style="opacity:0; position:absolute;" />
+                                    <button t-if="expense and expense.state not in ['post', 'done']"
+                                            id="delete_expense_id" type="submit" class="btn btn-danger mb32">
+                                        <span class="fa fa-trash-o" /> Delete expense
+                                    </button>
+                                    <button t-if="not expense or expense.state == 'draft' or expense.state == 'refused'" type="submit"
+                                            id="to_confirm_checkbox" class="btn btn-default btn-primary pull-right mb32 ">
+                                        Confirm
+                                        <span class="fa fa-long-arrow-right" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="alarm_cron_notify" model="ir.cron">
+            <field name="name">Alarms: triggers all done alarms and generates the appropriate notifications</field>
+            <field name="model">alarm.alarm</field>
+            <field name="function">cron_notify</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="nextcall">2017-01-01 02:00:00</field>
+        </record>
+
+        <record id="alarm_cron_delete" model="ir.cron">
+            <field name="name">
+                Alarms: deletes all closed and cancelled notifications that have been active for more than X days
+            </field>
+            <field name="model">alarm.notification</field>
+            <field name="function">cron_delete</field>
+            <field name="args"><![CDATA[(
+15, # Number of days after which a closed or cancelled notification is deleted (this must be a positive integer)
+)]]></field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="nextcall">2017-01-01 04:00:00</field>
+        </record>
+    </data>
+</odoo>

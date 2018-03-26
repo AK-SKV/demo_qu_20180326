@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_account_analytic_account_form_inherit_budget_improved" model="ir.ui.view">
+        <field name="name">account.analytic.account.form.inherit</field>
+        <field name="model">account.analytic.account</field>
+        <field name="inherit_id" ref="analytic.view_account_analytic_account_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <!-- Sales -->
+                <button class="oe_stat_button" type="action" id="total_amount_sales_button"
+                        name="%(sale.action_orders)d"
+                        icon="fa-usd"
+                        context="{'search_default_project_id': active_id, 'default_project_id': active_id}">
+                    <div class="o_form_field o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="total_amount_sales"/>
+                        </span>
+                        <span class="o_stat_text">Sales</span>
+                    </div>
+                </button>
+                <!-- Invoice -->
+                <button class="oe_stat_button" type="action" id="total_amount_invoices_button"
+                        name="%(action_invoice_tree_no_filters)d"
+                        icon="fa-usd"
+                        context="{'search_default_account_analytic_account_ids': active_id}">
+                    <div class="o_form_field o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="total_amount_invoices"/>
+                        </span>
+                        <span class="o_stat_text">Invoice</span>
+                    </div>
+                </button>
+            </div>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,161 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* timesheet_activities_portal_users
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-24 08:46+0000\n"
+"PO-Revision-Date: 2017-05-24 08:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "<span class=\"fa fa-trash-o\"/> Delete"
+msgstr "<span class=\"fa fa-trash-o\"/> Löschen"
+
+#. module: timesheet_activities_portal_users
+#: code:addons/timesheet_activities_portal_users/controllers/main.py:50
+#, python-format
+msgid "All"
+msgstr "Alle"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "Confirm\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "Bestätigen\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+msgid "Create"
+msgstr "Anlegen"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "Date"
+msgstr "Datum"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+msgid "Delete"
+msgstr "Löschen"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: timesheet_activities_portal_users
+#. openerp-web
+#: code:addons/timesheet_activities_portal_users/static/src/js/timesheet_activities_portal_users.js:65
+#: code:addons/timesheet_activities_portal_users/static/src/js/timesheet_activities_portal_users.js:71
+#, python-format
+msgid "Do you really want to remove these records?"
+msgstr "Möchten Sie diese Datensätze wirklich löschen?"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+msgid "Duration"
+msgstr "Dauer"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "My Timesheet activities"
+msgstr "Meine Arbeitszeiten"
+
+#. module: timesheet_activities_portal_users
+#: code:addons/timesheet_activities_portal_users/controllers/main.py:35
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+#, python-format
+msgid "Name"
+msgstr "Bezeichnung"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "New Timesheet Activity"
+msgstr "Arbeitszeit erfassen"
+
+#. module: timesheet_activities_portal_users
+#: code:addons/timesheet_activities_portal_users/controllers/main.py:34
+#, python-format
+msgid "Newest"
+msgstr "Aktuellste"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "Project"
+msgstr "Projekt"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "Project..."
+msgstr "Projekt..."
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "Quantity (hours)"
+msgstr "Anzahl (Stunden)"
+
+#. module: timesheet_activities_portal_users
+#: code:addons/timesheet_activities_portal_users/controllers/main.py:217
+#, python-format
+msgid "Some required fields are empty."
+msgstr "Einige benötigte Felder sind leer."
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "Task"
+msgstr "Aufgabe"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activity
+msgid "Task..."
+msgstr "Aufgabe..."
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+msgid "There are no timesheet activities."
+msgstr "Es gibt momentan keine Arbeitszeiten."
+
+#. module: timesheet_activities_portal_users
+#: code:addons/timesheet_activities_portal_users/controllers/main.py:55
+#, python-format
+msgid "This Month"
+msgstr "Dieser Monat"
+
+#. module: timesheet_activities_portal_users
+#: code:addons/timesheet_activities_portal_users/controllers/main.py:53
+#, python-format
+msgid "This Week"
+msgstr "Diese Woche"
+
+#. module: timesheet_activities_portal_users
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.my_timesheet_activities
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.portal_layout
+#: model:ir.ui.view,arch_db:timesheet_activities_portal_users.portal_my_home
+msgid "Timesheet activities"
+msgstr "Zeiterfassung"
+
+#. module: timesheet_activities_portal_users
+#: code:addons/timesheet_activities_portal_users/controllers/main.py:51
+#, python-format
+msgid "Today"
+msgstr "Tagesansicht"
+
+#. module: timesheet_activities_portal_users
+#: code:addons/timesheet_activities_portal_users/controllers/main.py:52
+#, python-format
+msgid "Yesterday"
+msgstr "Gestern"
+

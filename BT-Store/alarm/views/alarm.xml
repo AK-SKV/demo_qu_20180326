@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="alarm_tree_view" model="ir.ui.view">
+            <field name="name">alarm_tree_view</field>
+            <field name="model">alarm.alarm</field>
+            <field name="arch" type="xml">
+                <tree decoration-success="state=='done'" decoration-danger="state=='cancelled'">
+                    <field name="name"/>
+                    <field name="description_128"/>
+                    <field name="model_id"/>
+                    <field name="date_field_id"/>
+                    <field name="date_number"/>
+                    <field name="create_uid" groups="alarm.group_alarm_manager"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="alarm_form_view" model="ir.ui.view">
+            <field name="name">alarm_form_view</field>
+            <field name="model">alarm.alarm</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="do_trigger" type="object" string="Trigger Alarm" class="oe_highlight"/>
+                        <button name="do_preview_notification_message" type="object"
+                                string="Preview Notification Message"/>
+                        <field name="state" widget="statusbar" clickable="True"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only" string="Name"/>
+                            <h1><field name="name"/></h1>
+
+                            <label for="description" class="oe_edit_only" string="Description"/>
+                            <h3><field name="description"/></h3>
+
+                            <div attrs="{'invisible': [('create_uid', '=', False)]}">
+                                <label for="create_uid" string="Created by"/>
+                                <field name="create_uid" readonly="True"/>
+                            </div>
+                            <div attrs="{'invisible': [('triggered_on', '=', False)]}">
+                                <label for="triggered_on" string="Triggered on"/>
+                                <field name="triggered_on" readonly="True"/>
+                            </div>
+                        </div>
+
+                        <group col="4">
+                            <field name="current_user_group" colspan="4" invisible="1"/>
+
+                            <separator string="Record Selection" colspan="4"/>
+                            <field name="model_id" colspan="4"/>
+                            <field name="model_domain" colspan="4"
+                                   placeholder="Domain example: ['&amp;', ('state', '=', 'draft'), ('create_uid', '=', uid)]"/>
+
+                            <separator string="Date Condition" colspan="4"/>
+                            <field name="date_field_id"/>
+                            <field name="date_number"/>
+
+                            <separator string="Notification" colspan="4"/>
+                            <field name="notify_only_me" colspan="4" attrs="{'readonly': [('current_user_group', '!=', 'manager')]}"/>
+                            <field name="user_field_id" colspan="4"/>
+                            <field name="user_ids" colspan="4" attrs="{'invisible': [('notify_only_me', '=', True)]}"/>
+                            <field name="notification_message" widget="html" colspan="4"/>
+                            <div name="notification_message_help" colspan="4" style="text-align: center; margin-top: 1em">
+                                Note that you can add dynamic information to the <i>Notification Message</i> by using MAKO templates such as <i>${object.name}</i> or <i>${object.create_date}</i>.
+                                Then, you can preview the resulting message by clicking on the <i>Preview Notification Message</i> button.
+                            </div>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="alarm_search_view" model="ir.ui.view">
+            <field name="name">alarm_search_view</field>
+            <field name="model">alarm.alarm</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="model_id"/>
+                    <field name="create_uid"/>
+                    <separator/>
+
+                    <filter name="filter_my" string="My Alarms" domain="[('create_uid', '=', uid)]"/>
+                    <separator/>
+
+                    <filter name="filter_draft" string="Draft" domain="[('state', '=', 'draft')]"/>
+                    <filter name="filter_done" string="Done" domain="[('state', '=', 'done')]"/>
+                    <filter name="filter_cancelled" string="Cancelled" domain="[('state', '=', 'cancelled')]"/>
+                    <separator/>
+
+                    <filter name="group_name" string="Name" context="{'group_by': 'name'}"/>
+                    <filter name="group_model_id" string="Model" context="{'group_by': 'model_id'}"/>
+                    <filter name="group_state" string="State" context="{'group_by': 'state'}"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="show_alarms_tree_action" model="ir.actions.act_window">
+            <field name="name">Alarms</field>
+            <field name="res_model">alarm.alarm</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_filter_my': 1, 'search_default_filter_draft': 1, 'search_default_filter_done': 1}</field>
+        </record>
+
+        <record id="create_alarm_for_current_object_action" model="ir.actions.act_window">
+            <field name="name">Create Alarm</field>
+            <field name="res_model">alarm.alarm</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="multi">False</field>
+            <field name="key2">client_action_multi</field>
+        </record>
+    </data>
+</odoo>

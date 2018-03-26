@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_import_data_conversion_form" model="ir.ui.view">
+            <field name="name">view_import_data_conversion_form</field>
+            <field name="model">import.data.conversion</field>
+            <field name="arch" type="xml">
+                <form string="Conversion">
+                    <sheet>
+                        <group>
+                            <field name="source_value"/>
+                            <field name="dest_value"/>
+                            <field name="python_module_ids" widget="many2many_tags"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="real_estate_building_category_form" >
+            <field name="name">real_estate.building.category.form</field>
+            <field name="model">real_estate.building.category</field>
+            <field name="arch" type="xml">
+                <form string="Building Category">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="real_estate_building_category_search">
+            <field name="name">real_estate.building.category.search</field>
+            <field name="model">real_estate.building.category</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="real_estate_building_category_tree">
+            <field name="name">real_estate.building.category.tree</field>
+            <field name="model">real_estate.building.category</field>
+            <field name="arch" type="xml">
+                <tree string="Building Category">
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

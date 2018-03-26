@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="project_task_view_tree_editable" model="ir.ui.view">
+            <field name="name">project.task.tree.editable</field>
+            <field name="model">project.task</field>
+            <field name="arch" type="xml">
+                <tree string="Tasks" editable="bottom">
+                    <field name="name"/>
+                    <field name="subtask_count"/>
+                    <field name="user_id" invisible="context.get('user_invisible', False)"/>
+                    <field name="date_deadline" invisible="context.get('deadline_visible',True)"/>
+                    <field name="stage_id" invisible="context.get('set_visible',False)"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_task_form2_inherit_task_hierarchy" model="ir.ui.view">
+            <field name="name">project.task.form.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='oe_title']/h1" position="before">
+                    <div attrs="{'invisible': [('parent_id', '=', False)]}">
+                        <h1 class="o_row">
+                            <field name="parent_id" options="{'no_create': True}" readonly="1" nolabel="1"/>
+                        </h1>
+                        <br/>
+                    </div>
+                </xpath>
+                <field name="project_id" position="attributes">
+                    <attribute name="attrs">{'invisible': [('parent_id', '!=', False)]}</attribute>
+                </field>
+                <notebook position="inside">
+                    <page string="Related tasks">
+                        <field name="child_ids" nolabel="True"
+                               context="{'tree_view_ref': 'task_hierarchy.project_task_view_tree_editable'}"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+        <record id="view_task_kanban_inherit_task_hierarchy" model="ir.ui.view">
+            <field name="name">project.task.kanban.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//templates" position="before">
+                    <field name="subtask_count"/>
+                    <field name="parent_id"/>
+                </xpath>
+                <xpath expr="//div[hasclass('oe_kanban_content')]" position="attributes">
+                    <attribute name="style">width:70%;min-height:60px;</attribute>
+                </xpath>
+                <xpath expr="//div[hasclass('oe_kanban_content')]//field[@name='name']" position="before">
+                    <t t-if="record.parent_id.value">
+                        <t t-esc="record.parent_id.string"/>:
+                        <field name="parent_id"/>
+                        <br/>
+                    </t>
+                </xpath>
+                <xpath expr="//div[hasclass('oe_kanban_content')]" position="after">
+                    <div t-if="record.subtask_count.value > 0" style="min-height:50px;">
+                        <a style="background-color:#21b799;color:#fff;width:30%;text-align:center;height:60%;position:absolute;bottom:0;right:0;"
+                           name="open_subtasks"
+                           type="object">
+                            <span style="font-size:200%;">
+                                <t t-esc="record.subtask_count.value"/>
+                            </span>
+                            <br/>
+                            <t t-esc="record.subtask_count.string"/>
+                        </a>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+        <!-- List view -->
+        <record id="view_task_tree2_inherit_task_hierarchy" model="ir.ui.view">
+            <field name="name">project.task.tree.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_tree2"/>
+            <field name="arch" type="xml">
+                <field name="name" position="before">
+                    <field name="message_needaction" />
+                    <field name="parent_id"/>
+                </field>
+                <field name="name" position="after">
+                    <field name="subtask_count"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_task_search_form_inherit_task_hierarchy" model="ir.ui.view">
+            <field name="name">project_view_task_search_form_ext</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_search_form"/>
+            <field name="arch" type="xml">
+                <search position="inside">
+                    <field name="parent_id"/>
+                </search>
+                <group position="inside">
+                    <filter string="Parent Task" name="parent" context="{'group_by':'parent_id'}"/>
+                </group>
+                <filter name='inactive' position="after">
+                    <filter string="Archived &amp; Active" name="archived_and_active"
+                            domain="['|',('active','=',False),('active','!=',False)]"/>
+                    <separator/>
+                    <filter string="Level 0 Tasks" name="noparentid" domain="[('parent_id', '=', False)]"/>
+                </filter>
+            </field>
+        </record>
+
+        <record id="project.act_project_project_2_project_task_all" model="ir.actions.act_window">
+            <field name="context">{
+                'group_by': 'stage_id',
+                'search_default_project_id': [active_id],
+                'search_default_noparentid': 1,
+                'default_project_id': active_id,
+            }</field>
+        </record>
+
+        <record id="project.action_view_task" model="ir.actions.act_window">
+            <field name="context">
+                {
+                'group_by': 'project_id',
+                'search_default_my_tasks': 1,
+                'search_default_noparentid': 1,}
+            </field>
+        </record>
+
+    </data>
+</odoo>

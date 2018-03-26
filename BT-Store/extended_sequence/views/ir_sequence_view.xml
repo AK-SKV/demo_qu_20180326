@@ -1,0 +1,15 @@
+<odoo>
+	<data>
+		<record id="base_sequence_view_ext" model="ir.ui.view">
+			<field name="inherit_id" ref="base.sequence_view"/>
+			<field name="name">eq_account_base_sequence_view_ext</field>
+			<field name="model">ir.sequence</field>
+			<field name="arch" type="xml" >
+				<field name="use_date_range" position="after">
+					<field name="use_month_date_range" attrs="{'invisible': [('use_date_range', '=', False)]}"/>
+					<field name="use_daily_date_range" attrs="{'invisible': [('use_date_range', '=', False)]}"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</odoo>

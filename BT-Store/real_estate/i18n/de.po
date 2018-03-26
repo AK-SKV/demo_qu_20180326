@@ -1,0 +1,397 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* real_estate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-23 11:23+0000\n"
+"PO-Revision-Date: 2017-06-23 11:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: real_estate
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Address"
+msgstr "Adresse"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_account_invoice_ids
+msgid "All Invoices"
+msgstr "Alle Rechnungen"
+
+#. module: real_estate
+#: model:ir.model,name:real_estate.model_real_estate_building
+#: model:ir.model.fields,field_description:real_estate.field_account_invoice_building_id
+#: model:ir.model.fields,field_description:real_estate.field_purchase_order_building_id
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_building_id
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_parent_id
+#: model:ir.model.fields,field_description:real_estate.field_sale_order_building_id
+#: model:ir.model.fields,field_description:real_estate.field_sale_subscription_building_id
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_search
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_tree
+msgid "Building"
+msgstr "Gebäude"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_building_category_tree
+#: model:ir.ui.menu,name:real_estate.real_estate_building_category_menu
+msgid "Building Categories"
+msgstr "Gebäudekategorien"
+
+#. module: real_estate
+#: model:ir.model,name:real_estate.model_real_estate_building_category
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_category_form
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_category_tree
+msgid "Building Category"
+msgstr "Gebäudekategorie"
+
+#. module: real_estate
+#: model:ir.model,name:real_estate.model_real_estate_building_contact
+msgid "Building Contact"
+msgstr "Kontakt"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_building_tree
+#: model:ir.ui.menu,name:real_estate.real_estate_building_menu
+msgid "Buildings"
+msgstr "Gebäude"
+
+#. module: real_estate
+#: code:addons/real_estate/models/building_contact.py:21
+#: selection:real_estate.building.contact,type:0
+#, python-format
+msgid "Caretaker"
+msgstr "Abwart"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_child_ids
+msgid "Child Tags"
+msgstr "Gebäude"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_city
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_search
+msgid "City"
+msgstr "Stadt"
+
+#. module: real_estate
+#: model:ir.actions.act_window,help:real_estate.action_real_estate_building_tree
+msgid "Click to add a building."
+msgstr "Klicken Sie um ein gebäude."
+
+#. module: real_estate
+#: model:ir.actions.act_window,help:real_estate.action_real_estate_partner_tree
+msgid "Click to add a contact."
+msgstr "Klicken Sie um ein kontakt."
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category_color
+msgid "Color Index"
+msgstr "Farbkennzeichnung"
+
+#. module: real_estate
+#: model:ir.ui.menu,name:real_estate.real_estate_configuration_menu
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_partner_tree
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_ids
+#: model:ir.ui.menu,name:real_estate.real_estate_partner_menu
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_country_id
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_search
+msgid "Country"
+msgstr "Land"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category_create_uid
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_create_uid
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category_create_date
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_create_date
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_create_date
+msgid "Created on"
+msgstr "Angelegt am"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_customer_invoice_tree
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_customer_invoice_ids
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Customer Invoices"
+msgstr "Ausgangsrechnungen"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_customer_refund_tree
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_customer_refund_ids
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Customer Refunds"
+msgstr "Kundengutschriften"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_customer_invoice_count
+msgid "Customer invoice count"
+msgstr "Anzahl Kundenrechnungen"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_customer_refund_count
+msgid "Customer refund count"
+msgstr "Anzahl Kundengutschriften"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_name
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category_display_name
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: real_estate
+#: code:addons/real_estate/models/building.py:97
+#, python-format
+msgid "Error ! You can not create recursive tags."
+msgstr "Bitte wählen Sie ein anderes Gebäude aus."
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category_id
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_id
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_id
+msgid "ID"
+msgstr "ID"
+
+#. module: real_estate
+#: model:ir.model,name:real_estate.model_account_invoice
+msgid "Invoice"
+msgstr "Rechnung"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building___last_update
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category___last_update
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact___last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category_write_uid
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_write_uid
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert durch"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category_write_date
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_write_date
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_parent_left
+msgid "Left parent"
+msgstr "Übergeordneter Partner"
+
+#. module: real_estate
+#: model:res.groups,name:real_estate.group_real_estate_manager
+msgid "Manager"
+msgstr "Manager"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_display_name
+msgid "Name"
+msgstr "Name"
+
+#. module: real_estate
+#: code:addons/real_estate/models/building_contact.py:19
+#: selection:real_estate.building.contact,type:0
+#, python-format
+msgid "Owner"
+msgstr "Besitzer"
+
+#. module: real_estate
+#: model:ir.model,name:real_estate.model_res_partner
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: real_estate
+#: model:ir.model,name:real_estate.model_purchase_order
+msgid "Purchase Order"
+msgstr "Einkäufe"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_purchase_order_count
+msgid "Purchase order count"
+msgstr "Anzahl Einkäufe"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_purchase_order_tree
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_purchase_order_ids
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Purchases"
+msgstr "Einkauf"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_res_partner_real_estate
+#: model:ir.model.fields,field_description:real_estate.field_res_users_real_estate
+#: model:ir.module.category,name:real_estate.module_category_real_estate
+#: model:ir.ui.menu,name:real_estate.real_estate_menu
+msgid "Real Estate"
+msgstr "Real Estate"
+
+#. module: real_estate
+#: code:addons/real_estate/models/building_contact.py:20
+#: selection:real_estate.building.contact,type:0
+#, python-format
+msgid "Renter"
+msgstr "Mieter"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_parent_right
+msgid "Right parent"
+msgstr "Übergeordneter Partner"
+
+#. module: real_estate
+#: model:ir.model,name:real_estate.model_sale_subscription
+msgid "Sale Subscription"
+msgstr "Abo"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_sale_order_count
+msgid "Sale order count"
+msgstr "Anzahl Verkäufe"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_sale_subscription_count
+msgid "Sale subscription count"
+msgstr "Anzahl Abos"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_sale_order_tree
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_sale_order_ids
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Sales"
+msgstr "Verkäufe"
+
+#. module: real_estate
+#: model:ir.model,name:real_estate.model_sale_order
+msgid "Sales Order"
+msgstr "Verkaufsauftrag"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_size
+msgid "Size (m2)"
+msgstr "Wohnfläche (m2)"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_state_id
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_search
+msgid "State"
+msgstr "Bundesland"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_street
+msgid "Street"
+msgstr "Straße"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_street2
+msgid "Street 2"
+msgstr "Straße 2"
+
+#. module: real_estate
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Street 2..."
+msgstr "Straße2..."
+
+#. module: real_estate
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Street..."
+msgstr "Straße..."
+
+#. module: real_estate
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Subbuildings"
+msgstr "Untergebäude"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_sale_subscription_tree
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_sale_subscription_ids
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_supplier_invoice_tree
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_supplier_invoice_ids
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Supplier Invoices"
+msgstr "Lieferantenrechnungen"
+
+#. module: real_estate
+#: model:ir.actions.act_window,name:real_estate.action_real_estate_supplier_refund_tree
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_supplier_refund_ids
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Supplier Refunds"
+msgstr "Lieferantengutschriften"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_supplier_invoice_count
+msgid "Supplier invoice count"
+msgstr "Anzahl Lieferantenrechnunge"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_supplier_refund_count
+msgid "Supplier refund count"
+msgstr "Anzahl Lieferantengutschriften"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_category_name
+msgid "Tag Name"
+msgstr "Tag Bezeichnung"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_building_category_ids
+msgid "Tags"
+msgstr "Stichwörter"
+
+#. module: real_estate
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "Tags..."
+msgstr "Tags..."
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_contact_type
+msgid "Type"
+msgstr "Typ"
+
+#. module: real_estate
+#: model:res.groups,name:real_estate.group_real_estate_user
+msgid "User"
+msgstr "Benutzer"
+
+#. module: real_estate
+#: model:ir.model.fields,field_description:real_estate.field_real_estate_building_zip
+#: model:ir.ui.view,arch_db:real_estate.real_estate_building_form
+msgid "ZIP"
+msgstr "PLZ"

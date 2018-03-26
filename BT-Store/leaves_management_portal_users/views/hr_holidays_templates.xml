@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_frontend" inherit_id="website_enterprise.assets_frontend" name="Leaves">
+      <xpath expr="." position="inside">
+          <link rel="stylesheet" href="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.css"/>
+          <link rel="stylesheet" href="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.css"/>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ar.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.az.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.bg.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.bs.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ca.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.cs.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.cy.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.da.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.de.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.el.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.en-AU.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.en-GB.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.eo.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.es.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.et.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.eu.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fa.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fi.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fo.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.fr-CH.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.gl.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.he.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.hr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.hu.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.hy.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.id.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.is.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.it.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.it-CH.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ja.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ka.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.kh.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.kk.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ko.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.kr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.lt.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.lv.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.me.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.mk.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.mn.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ms.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.nb.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.nl.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.nl-BE.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.no.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pl.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pt.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ro.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.rs.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.rs-latin.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ru.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sk.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sl.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sq.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sr-latin.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sv.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.sw.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.th.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.tr.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.uk.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.vi.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/lib/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+          <script type="text/javascript" src="/leaves_management_portal_users/static/src/js/leaves_management_portal_users.js"></script>
+      </xpath>
+    </template>
+
+    <template id="portal_layout" name="Portal layout: leaves menu entry"
+              inherit_id="website_portal.portal_layout" priority="40">
+        <xpath expr="//ul[contains(@class,'o_portal_submenu')]" position="inside">
+            <li t-att-class="page_name == 'leaves' and 'active' or ''">
+                 <a href="/my/leaves">Leaves</a>
+            </li>
+        </xpath>
+    </template>
+
+    <template id="portal_my_home" name="Portal My Home: leaves"
+              inherit_id="website_portal.portal_my_home" priority="40">
+        <xpath expr="//div[contains(@class,'o_my_home_content')]" position="inside">
+            <h3 class="page-header">
+                <a href="/my/leaves">Your leaves</a>
+            </h3>
+        </xpath>
+    </template>
+
+    <template id="my_leaves" name="My leaves">
+        <t t-call="website_portal.portal_layout">
+            <div class="row">
+                <t t-if="request.session.get('error_unlink')">
+                    <div class="col-md-12">
+                        <div class="alert alert-danger">
+                            <t t-esc="request.session.get('error_unlink')" />
+                        </div>
+                    </div>
+                </t>
+                <h3 class="page-header">
+                    Leaves
+                    <div class="dropdown pull-right mr8">
+                        <button id="sortby" class="btn btn-default" type="button" data-toggle="dropdown">
+                            <span class="fa fa-sort fa-lg" /> <span t-esc="sortings.get(sortby, {}).get('label', sortings.get('date_from', {}).get('label', translate_func('Newest')))"/>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="sortby">
+                            <li t-foreach="sortings" t-as="option" t-attf-class="#{sortby == option and 'active'}">
+                                <a t-att-href="default_url + '?' + keep_query('date', sortby=option)">
+                                    <span t-esc="sortings.get(option).get('label')"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown pull-right mr8">
+                        <button id="date_filters" class="btn btn-default" type="button" data-toggle="dropdown">
+                            <span t-esc="date_filters.get(date, {}).get('label', date_filters.get('future_leaves', {}).get('label', translate_func('Future leaves')))"/>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="date_filters">
+                            <li t-foreach="date_filters" t-as="option" t-att-class="leave == option and 'active'">
+                                <a t-attf-href="/my/leaves?{{ keep_query('sortby', date=option) }}">
+                                    <span t-esc="date_filters.get(option).get('label')"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </h3>
+            </div>
+            <form id="delete_form" action="/my/leave/delete" method="post">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div class="clearfix">
+                    <a t-attf-href="/my/leave/create" class="btn btn-default btn-primary mb32">Create</a>
+                    <button type="submit" id="button_to_remove_leaves" class="btn btn-default btn-danger mb32 o_hidden">
+                        Delete
+                    </button>
+                </div>
+                <div class="panel panel-default o_leaves_management_portal_users">
+                    <t t-if="not leaves">
+                        <div class="alert alert-warning mt8" role="alert">
+                            There are no leaves yet.
+                        </div>
+                    </t>
+                    <table t-if="leaves" class="table table-hover status_table">
+                        <thead>
+                            <tr class="active">
+                                <th class="col-md-1 o_list_record_selector">
+                                    <div class="o_checkbox">
+                                        <input type="checkbox" name="select_all" /><span/>
+                                    </div>
+                                </th>
+                                <th class="col-md-6" id="employee_header">Employee</th>
+                                <th class="col-md-6" id="leave_type_header">Leave type</th>
+                                <th class="col-md-6" id="description_header">Description</th>
+                                <th class="col-md-6" id="start_date_header">Start date</th>
+                                <th class="col-md-6" id="end_date_header">End date</th>
+                                <th class="col-md-6" id="number_of_days_header">Number of days</th>
+                                <th class="col-md-6" id="state_header">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="leaves" t-as="leave">
+                                <td class="o_list_record_selector">
+                                    <div class="o_checkbox">
+                                        <input type="checkbox" t-att-name="leave.id" t-att-checked="checked"/><span/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a t-attf-href="/my/leave/#{leave.id}?{{ keep_query() }}">
+                                        <span t-field="leave.employee_id.name"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a t-attf-href="/my/leave/#{leave.id}?{{ keep_query() }}">
+                                        <span t-field="leave.holiday_status_id.name"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a t-attf-href="/my/leave/#{leave.id}?{{ keep_query() }}">
+                                        <span t-field="leave.name"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a t-attf-href="/my/leave/#{leave.id}?{{ keep_query() }}">
+                                        <span><t t-esc="convert_datetime_to_date(leave.date_from)"/></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a t-attf-href="/my/leave/#{leave.id}?{{ keep_query() }}">
+                                        <span><t t-esc="convert_datetime_to_date(leave.date_to)"/></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a t-attf-href="/my/leave/#{leave.id}?{{ keep_query() }}">
+                                        <span t-field="leave.number_of_days_temp"
+                                              t-field-options='{"widget": "duration", "unit": "day", "round": "day"}'/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <span t-att-class="get_class_state_dict.get(leave.state, 'label label-success')"
+                                          title="Current state of the leave"
+                                          t-esc="get_description_state_dict.get(leave.state)" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            <div t-if="pager" class="o_portal_pager text-center">
+                <t t-call="website.pager"/>
+            </div>
+        </t>
+    </template>
+
+    <template id="my_leave" name="My leave">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <div class="oe_structure">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ol class="breadcrumb mt8">
+                                    <li><a href="/my/home"><i class="fa fa-home"/></a></li>
+                                    <li><a t-attf-href="/my/leaves?#{keep_query()}">My Leaves</a></li>
+                                    <li t-if="leave"><span t-field="leave.name"/></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 t-if="not leave">
+                        New Leave Request
+                    </h1>
+                    <form action="/my/leave/update" method="post">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <div class="row o_leaves_management_portal_users">
+                            <div class="col-md-8">
+                                <div class='row'>
+                                    <div class="col-md-12">
+                                      <div t-if="error_message" class="alert alert-danger">
+                                          <t t-foreach="error_message" t-as="err"><t t-esc="err"/><br /></t>
+                                      </div>
+                                    </div>
+                                    <div t-attf-class="form-group #{error.get('name') and 'has-error' or ''} col-lg-6">
+                                        <label class="control-label" for="name">Description</label>
+                                        <input type="text" name="name" class="form-control"
+                                               t-att-disabled="leave and leave.state in ['cancel', 'validate', 'validate1']"
+                                               t-att-value="name or (leave and leave.name)" />
+                                    </div>
+                                    <div t-attf-class="form-group #{error.get('holiday_status_id') and 'has-error' or ''} col-lg-6">
+                                        <label class="control-label" for="holiday_status_id">Leave Type</label>
+                                        <select name="holiday_status_id"
+                                                t-att-disabled="leave and leave.state in ['cancel', 'validate', 'validate1']"
+                                                class="form-control">
+                                            <option value="">Leave Type...</option>
+                                            <t t-foreach="holiday_status_ids or []" t-as="leave_status">
+                                                <option t-att-value="leave_status.id"
+                                                        t-att-selected="leave_status.id == (holiday_status_id or (leave and leave.holiday_status_id.id))">
+                                                    <t t-esc="leave_status.display_name" />
+                                                </option>
+                                            </t>
+                                        </select>
+                                    </div>
+                                    <div id="date_from" t-attf-class="form-group #{error.get('date_from') and 'has-error' or ''} col-lg-6">
+                                        <div>
+                                            <label class="control-label" for="date_from">Start Date</label>
+                                            <div id="datepicker-container-date-from">
+                                                <div id="datepicker_date_from"
+                                                     t-attf-class="input-group date datepicker col-lg-6">
+                                                    <input id="date_from_input" name="date_from"
+                                                           t-att-disabled="leave and leave.state in ['cancel', 'validate', 'validate1']"
+                                                           data-depends="true"
+                                                           t-att-value="date_from or (leave and leave.date_from and convert_datetime_to_date(leave.date_from))"
+                                                           type="text" maxlength="10" class="form-control"/>
+                                                    <span id="myid" class="input-group-addon">
+                                                        <i class="fa fa-calendar" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <select name="date_from_half_day"
+                                                    t-att-disabled="leave and leave.state in ['cancel', 'validate', 'validate1']"
+                                                    class="form-control" style="width: auto;">
+                                                <option value="morning" t-att-selected="(date_from_half_day and date_from_half_day == 'morning') or date_from_is_morning">Morning</option>
+                                                <option value="afternoon" t-att-selected="(date_from_half_day and date_from_half_day == 'afternoon') or not date_from_is_morning">Afternoon</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="date_to" t-attf-class="form-group #{error.get('date_to') and 'has-error' or ''} col-lg-6">
+                                        <div>
+                                            <label class="control-label" for="date_to">End Date</label>
+                                            <div id="datepicker-container-date-to">
+                                                <div id="datepicker_date_to"
+                                                     t-attf-class="input-group date datepicker col-lg-6">
+                                                    <input id="date_to_input" name="date_to"
+                                                           t-att-disabled="leave and leave.state in ['cancel', 'validate', 'validate1']"
+                                                           data-depends="true"
+                                                           t-att-value="date_to or (leave and leave.date_to and convert_datetime_to_date(leave.date_to))"
+                                                           type="text" maxlength="10" class="form-control"/>
+                                                    <span id="myid" class="input-group-addon">
+                                                        <i class="fa fa-calendar" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <select name="date_to_half_day"
+                                                    t-att-disabled="leave and leave.state in ['cancel', 'validate', 'validate1']"
+                                                    class="form-control" style="width: auto;">
+                                                <option value="morning" t-att-selected="(date_to_half_day and date_to_half_day == 'morning') or date_to_is_morning">Morning</option>
+                                                <option value="afternoon" t-att-selected="(date_to_half_day and date_to_half_day == 'afternoon') or not date_to_is_morning">Afternoon</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div t-if="leave and leave.state == 'refuse'" class="col-md-12">
+                                      <div t-if="leave and leave.report_note" class="alert alert-danger">
+                                          <label>The request has been refused due to:</label><br />
+                                          <t t-esc="leave.report_note"/><br />
+                                      </div>
+                                    </div>
+                                    <input type="hidden" name="leave_id" t-att-value="leave and leave.id"/>
+                                </div>
+                                <div class="clearfix">
+                                    <input type="checkbox" id="to_delete_checkbox" name="to_delete" style="opacity:0; position:absolute;" />
+                                    <button t-if="leave and leave.state not in ['cancel', 'validate', 'validate1']"
+                                            id="delete_leave_id" type="submit" class="btn btn-danger mb32">
+                                        <span class="fa fa-trash-o" /> Delete
+                                    </button>
+                                    <button t-if="leave and leave.state == 'refuse'" type="submit" id="to_reset_state"
+                                            class="btn btn-default btn-primary pull-right mb32 ">
+                                        Reset to draft
+                                        <span class="fa fa-refresh" />
+                                    </button>
+                                    <button t-if="not leave or leave.state == 'draft' or leave.state == 'confirm'" type="submit"
+                                            id="to_confirm_checkbox" class="btn btn-default btn-primary pull-right mb32 ">
+                                        Confirm
+                                        <span class="fa fa-long-arrow-right" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="leaves_partner_with_no_mail">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <t t-raw="0"/>
+                <div class="oe_structure oe_empty">
+                    <div class="container">
+                        <h1 class="mt32">Contact with the system administrator.</h1>
+                        <p>Unable to send email, please configure the sender's email address.</p>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

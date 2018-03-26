@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <record id="base_view_partner_form_ext" model="ir.ui.view">
+            <field name="name">read_only_user_base_view_partner_form_ext</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <button name="toggle_active" position="after">
+                    <button name="toggle_regular_user" type="object" class="oe_stat_button" icon="fa-check">
+                        <field name="is_regular_user" widget="boolean_button" options='{"terminology": {
+                                    "string_false": "Read-only",
+                                    "hover_fañse": "Remove read-only",
+                                    "string_true": "Regular user",
+                                    "hover_true": "Make read-only"}}'/>
+                    </button>
+                </button>
+            </field>
+        </record>
+    </data>
+</odoo>

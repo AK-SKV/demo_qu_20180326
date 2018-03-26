@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_import_data_object_column_form" model="ir.ui.view">
+            <field name="name">Import Data Object Column Form</field>
+            <field name="model">import.data.object.column</field>
+            <field name="arch" type="xml">
+                <form string="Define Parameters For Import">
+                    <sheet>
+                        <group string="Column Configuration">
+                            <field name="is_from_default"/>
+                            <field name="number"
+                                   attrs="{'invisible': [('is_from_default', '=', True)]}"/>
+                            <field name="model_id" invisible="1"/>
+                            <field name="field_id" required="True"
+                                domain="[('model_id', '=', model_id)]"/>
+                            <field name="type" attrs="{'invisible': [('is_from_default', '=', True)]}"/>
+                        </group>
+                        <group string="Modify Source Value (Optional)">
+                            <field name="odoo_default_value"/>
+                            <field name="defaults_only_on_create"/>
+                            <p>How to specify the default values:</p>
+                            <ul>
+                                <li class="list-group-item">If char/number: the value as is (Example: Married, Example 2: 145.6)</li>
+                                <li class="list-group-item">If many2one: the id of the record (Example: 5)</li>
+                                <li class="list-group-item">If many2many: list containing the ids of the records (Example: [1, 3, 5])</li>
+                            </ul>
+                            <field name="is_to_be_converted"/>
+                        </group>
+                        <group string="Conversion (Optional)"
+                               attrs="{'invisible': [('is_to_be_converted', '=', False)]}"
+                               help="For example: 'Genre' -> 'genre', '1' -> 1, etc">
+                            <field name="source_type"
+                                   attrs="{'readonly': [('is_to_be_converted', '=', False)]}"/>
+                            <field name="dest_type"
+                                   attrs="{'readonly': [('is_to_be_converted', '=', False)]}"/>
+                            <field name="data_conversion_ids">
+                                <tree editable="bottom">
+                                    <field name="source_value"/>
+                                    <field name="dest_value"/>
+                                    <field name="python_module_ids" widget="many2many_tags"/>
+                                </tree>
+                            </field>
+                            <field name="is_always_eval"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_import_data_object_column_tree" model="ir.ui.view">
+            <field name="name">Import Data Object Column Tree</field>
+            <field name="model">import.data.object.column</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="number"/>
+                    <field name="field_id"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</openerp>

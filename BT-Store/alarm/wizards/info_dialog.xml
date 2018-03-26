@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="info_dialog_form_view" model="ir.ui.view">
+            <field name="name">info_dialog_form_view</field>
+            <field name="model">alarm.info.dialog</field>
+            <field name="arch" type="xml">
+                <form edit="false">
+                    <sheet>
+                        <field name="message" widget="html"/>
+                    </sheet>
+                    <footer>
+                        <button special="cancel" class="oe_highlight" string="Close"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

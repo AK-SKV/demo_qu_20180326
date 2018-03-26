@@ -1,0 +1,32 @@
+git_repositories:
+  - repository: git@github.com:brain-tec/odoo.git
+    branch: 10.0
+    maindir: True
+    shallow: True
+  - repository: git@github.com:brain-tec/enterprise.git
+    branch: 10.0
+    maindir: True
+    shallow: True
+  - repository: git@github.com:BT-dschleich/BT-Store.git
+    branch: 10.0
+    mainrepo: True
+    addons:
+      - alarm
+      - helpdesk_default_stage
+      - expenses_management_portal_users
+      - leaves_management_portal_users
+      - read_only_user
+      - readonly_inheritance
+      - real_estate
+      - rounding_difference
+      - shift_multiple_select
+      - stop_schedulers
+      - task_hierarchy
+      - timesheet_activities_portal_users
+      - file_data_importer
+      - budget_improved
+      - align_right_numeric_columns
+
+add_pip_pkgs:
+  - user-agents
+  - odoorpc
