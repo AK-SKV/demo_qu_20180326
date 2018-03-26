@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_hr_holidays_user_portal,hr.holidays.user.portal,hr_holidays.model_hr_holidays,base.group_portal,1,1,1,1
-access_hr_holidays_status_user_portal,hr.holidays.status.user.portal,hr_holidays.model_hr_holidays_status,base.group_portal,1,0,0,0
-access_hr_holidays_status_user_portal,hr.holidays.status.user.portal,hr_holidays.model_hr_holidays_status,base.group_portal,1,0,0,0
-access_hr_employee_user_portal,hr.employee.user.portal,hr.model_hr_employee,base.group_portal,1,0,0,0
-access_hr_employee_category_user_portal,hr.employee.category.user.portal,hr.model_hr_employee_category,base.group_portal,1,0,0,0
-access_resource_resource_user_portal,resource.resource.user.portal,resource.model_resource_resource,base.group_portal,1,0,0,0
